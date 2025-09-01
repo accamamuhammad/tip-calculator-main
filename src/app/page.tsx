@@ -1,4 +1,4 @@
-"use client";
+4"use client";
 import React, { useState } from "react";
 import Image from "next/image";
 import Tips from "../components/Tips";
@@ -28,12 +28,13 @@ export default function Home() {
     <main className="w-full sm:w-[80%] h-fit pt-44 sm:pt-14 sm:pb-5 md:pb-0 gap-8 flex flex-col items-center justify-center">
       <Image width={75} height={50} alt="logo" src={Logo} />
       <section className="w-full md:w-[750px] h-fit p-6 md:p-7 gap-5 flex flex-col items-center justify-center md:flex-row bg-white rounded-2xl">
-        <main className="w-full h-full px-0.5 space-y-7 rounded-2xl flex flex-col justify-between">
+        <div className="w-full h-full px-0.5 space-y-7 rounded-2xl flex flex-col justify-between">
           {/* Bill input */}
           <section className="gap-2 flex flex-col items-start justify-center">
             <h2 className="text-[#00494d] opacity-70 text-[0.9rem]">Bill</h2>
             <div className="w-full h-fit relative rounded-sm bg-[#deebeb]">
               <input
+                id="bill-input"
                 type="number"
                 onChange={handleBillInput}
                 className="w-full h-full pr-4 py-1 px-0.5 text-2xl rounded-lg text-right"
@@ -78,6 +79,7 @@ export default function Home() {
             </h2>
             <div className="w-full h-fit relative rounded-sm bg-[#deebeb]">
               <input
+                id="people-input"
                 type="number"
                 onChange={handlePeopleInput}
                 className="w-full h-full pr-4 py-1 px-0.5 text-[#00494d] text-2xl rounded-lg text-right"
@@ -91,7 +93,7 @@ export default function Home() {
               />
             </div>
           </section>
-        </main>
+        </div>
         <Display
           bill={bill}
           tipAmount={tipAmount}
