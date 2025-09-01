@@ -1,0 +1,65 @@
+@import "tailwindcss";
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: rgb(203, 227, 230);
+    --foreground: #ededed;
+  }
+}
+
+@font-face {
+  font-family: "space-mono-regular";
+  src: url(../../public/font/SpaceMono-Regular.ttf);
+}
+
+@font-face {
+  font-family: "space-mono-bold";
+  src: url(../../public/font/SpaceMono-Bold.ttf);
+}
+
+body {
+  width: 100%;
+  height: 100dvh;
+  background: var(--background);
+  color: var(--foreground);
+  font-family: "space-mono-regular";
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+h1,
+h2,
+button,
+input {
+  font-family: "space-mono-bold";
+}
+
+input {
+  cursor: pointer;
+  color: #00494d;
+}
+
+/* Remove arrows in Chrome, Safari, Edge */
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Remove arrows in Firefox */
+input[type="number"] {
+  -moz-appearance: textfield;
+}
