@@ -1,4 +1,4 @@
-4"use client";
+"use client";
 import React, { useState } from "react";
 import Image from "next/image";
 import Tips from "../components/Tips";

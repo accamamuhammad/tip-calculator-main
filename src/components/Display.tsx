@@ -19,7 +19,7 @@ const Display: React.FC<DisplayProps> = ({
   const totalPerPerson = people > 0 ? bill / people + tipPerPerson : 0;
 
   return (
-    <main className="w-full h-full md:h-[22rem] border px-7 py-7 space-y-8 bg-[#00494d] rounded-2xl flex flex-col justify-between">
+    <section className="w-full h-full md:h-[22rem] border px-7 py-7 space-y-8 bg-[#00494d] rounded-2xl flex flex-col justify-between">
       <div className="space-y-5">
         {/* Tip Amount */}
         <section className="w-full flex flex-row items-center justify-between">
@@ -51,7 +51,7 @@ const Display: React.FC<DisplayProps> = ({
       >
         RESET
       </button>
-    </main>
+    </section>
   );
 };
 
