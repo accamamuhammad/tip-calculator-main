@@ -47,7 +47,7 @@ const Display: React.FC<DisplayProps> = ({
       {/* Reset Button */}
       <button
         onClick={onReset}
-        className="bg-[rgb(46,102,108)] hover:bg-[rgb(175,230,220)] text-[rgb(40,92,98)] w-full py-2 mt-4 text-lg rounded-md cursor-pointer"
+        className="bg-[rgb(59,116,123)] hover:bg-[rgb(175,230,220)] text-[rgb(40,92,98)] w-full py-2 mt-4 text-lg rounded-md cursor-pointer"
       >
         RESET
       </button>
