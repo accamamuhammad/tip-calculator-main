@@ -43,6 +43,7 @@ body {
 h1,
 h2,
 button,
+label,
 input {
   font-family: "space-mono-bold";
 }

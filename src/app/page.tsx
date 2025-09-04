@@ -31,7 +31,12 @@ export default function Home() {
         <div className="w-full h-full px-0.5 space-y-7 rounded-2xl flex flex-col justify-between">
           {/* Bill input */}
           <section className="gap-2 flex flex-col items-start justify-center">
-            <h2 className="text-[#00494d] opacity-70 text-[0.9rem]">Bill</h2>
+            <label
+              htmlFor="bill-input"
+              className="text-[#00494d] opacity-70 text-[0.9rem]"
+            >
+              Bill
+            </label>
             <div className="w-full h-fit relative rounded-sm bg-[#deebeb]">
               <input
                 id="bill-input"
@@ -74,9 +79,12 @@ export default function Home() {
           </section>
           {/* Number of people input */}
           <section className="gap-2 flex flex-col items-start justify-center">
-            <h2 className="text-[#00494d] opacity-70 text-[0.9rem]">
+            <label
+              htmlFor="people-input"
+              className="text-[#00494d] opacity-70 text-[0.9rem]"
+            >
               Number of People
-            </h2>
+            </label>
             <div className="w-full h-fit relative rounded-sm bg-[#deebeb]">
               <input
                 id="people-input"
